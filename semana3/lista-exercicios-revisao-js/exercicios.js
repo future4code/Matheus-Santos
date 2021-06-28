@@ -61,28 +61,20 @@ function retornaExpressoesBooleanas() {
   const letraC = (booleano2 || booleano3) && (booleano4 || booleano1) 
   const letraD = !(booleano1) && !(booleano3) || (!booleano4 && booleano3 && booleano3) 
   const letraE = !(booleano1) && !(booleano3) || (!booleano4 && booleano3 && booleano3)
-  const respostas = [letraA, letraB, letraC, letraD, letraE] 
+  const respostas = [letraA, letraB, letraC, letraD,] 
   return respostas 
 }
 
 // EXERCÍCIO 07
 function retornaNNumerosPares(n) {
-  let array = [] 
-  for(let i = 0; i < n; i++){
-    array.push(2 * i) 
-  } 
-  return array 
-} 
+
+}
 
 // EXERCÍCIO 08
 function checaTriangulo(a, b, c) {
-  if(a !== b && b !== c) {
-    return "Escaleno"
-  } else if(a === b && b === c) {
-    return "Equilátero"
-  } else {
-    return "Isósceles"
-  }
+  // return 'Escaleno'
+  // return 'Equilátero'
+  // return 'Isósceles'
 }
 
 // EXERCÍCIO 09
