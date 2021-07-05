@@ -1,0 +1,35 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px; 
+    background-color: mediumvioletred; 
+    align-items: center;
+} 
+
+.titulo{
+    display: flex;
+    align-items: center;
+    font-size: 30px; 
+    font-weight: bold; 
+    justify-content: space-between; 
+    width: 230px;
+} 
+
+button{
+    display: flex; 
+    align-items: center; 
+    height: 25px;
+    width: 50px;
+}
+
+header img{
+    height: 40px; 
+    align-items: center; 
+} 
