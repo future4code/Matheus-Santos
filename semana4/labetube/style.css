@@ -1,0 +1,28 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+
+.titulo{
+    display: flex; 
+    align-items: center;
+    padding: 12px; 
+    justify-content: space-between; 
+    background-color: coral;
+} 
+
+.buscar{
+    display: flex; 
+    width: 100px; 
+    height: 20px;
+} 
+
+.template{
+    display: flex; 
+    flex-direction: column; 
+    width: 300px; 
+    justify-content: center;
+    padding: 20px;
+}
