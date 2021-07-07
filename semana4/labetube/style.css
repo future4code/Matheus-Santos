@@ -19,10 +19,15 @@
     height: 20px;
 } 
 
-.template{
+.thumbnail{
     display: flex; 
     flex-direction: column; 
     width: 300px; 
     justify-content: center;
     padding: 20px;
+} 
+
+main{
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
 }
