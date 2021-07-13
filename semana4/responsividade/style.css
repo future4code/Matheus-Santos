@@ -51,3 +51,15 @@ footer {
 .video video {
   height: 300px;
 }
+ 
+@media screen and (max-width: 1200px){
+  .titulo {
+    background-color: seagreen; 
+  } 
+
+  footer {
+    background-color: seagreen;
+  } 
+
+/* 1200px 992px 768px 600px 400px */
+}
