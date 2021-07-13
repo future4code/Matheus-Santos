@@ -1,5 +1,5 @@
 import React from 'react';
-import { ImagemButtoncss } from './ImagemButtoncss ';
+import { ImagemButtoncss } from './ImagemButtoncss';
 
 function ImagemButton(props) {
     return (
