@@ -16,7 +16,7 @@ export default function PokeCard(props) {
   };
 
   useEffect(() => {
-    pegaPokemon(pokemon); 
+    pegaPokemon(props.pokemon); 
   }, []);
 
   useEffect(() => {
