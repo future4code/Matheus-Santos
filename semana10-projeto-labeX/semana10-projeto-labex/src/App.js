@@ -1,40 +1,46 @@
-import React from 'react' 
-import { BrowserRouter, Router, Switch } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HomePage } from "./components/HomePage" 
+import { LoginPage } from "./components/LoginPage" 
+import { AdminHomePage } from "./components/AdminHomePage" 
+import { ListTripsPage } from "./components/ListTripsPage" 
+import { ApplicationFormPage } from "./components/ApplicationFormPage" 
+import { CreateTripPage } from "./components/CreateTripPage" 
+import { TripDetailsPage } from "./components/TripDetailsPage"
+
 
 function App() {
   return (
-    <BrowserRouter> 
-      <Switch> 
-        
-        <Router path={"/adminhome"}>
-        <AdminHomePage />
-        </Router>
+    <BrowserRouter>
+      <Routes>
+        <Route exact path={"/"}>
+          <HomePage />
+        </Route>
 
-        <Router path={"/applicationform"}>
-        <ApplicationFormPage />
-        </Router>
+        <Route exact path={"/LoginPage"}>
+          <LoginPage />
+        </Route>
 
-        <Router path={"/createtrip"}>
-        <CreateTripPage />
-        </Router>
+        <Route exact path={"/AdminHomePage"}>
+          <AdminHomePage />
+        </Route>
 
-        <Router path={"/home"}>
-        <HomePage /> 
-        </Router>
+        <Route exact path={"/ListTripsPage"}>
+          <ListTripsPage />
+        </Route>
 
-        <Router path={"/listtrips"}>
-        <ListTripsPage />
-        </Router>
+        <Route exact path={"/ApplicationFormPage"}>
+          <ApplicationFormPage />
+        </Route>
 
-        <Router path={"/login"}>
-        <LoginPage />
-        </Router>
+        <Route exact path={"/CreateTripPage"}>
+          <CreateTripPage />
+        </Route>
 
-        <Router path={"/tripdetails"}>
-        <TripDetailsPage />
-        </Router>
-
-      </Switch>
+        <Route exact path={"/TripDetailsPage"}>
+          <TripDetailsPage />
+        </Route>
+      </Routes>
     </BrowserRouter>
   );
 }
