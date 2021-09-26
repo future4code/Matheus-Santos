@@ -52,5 +52,5 @@ app.post("/users/create", (req: Request, res: Response) => {
 });
 
 app.listen(3003, () => {
-  console.log("Servidor rondando na porta 3003");
+  console.log("Servidor rondando na porta 3003")
 });
