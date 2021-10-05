@@ -1,0 +1,34 @@
+Exercício 1: 
+
+A. Qual método HTTP você deve utilizar para isso? 
+R: 
+
+
+B. Como você indicaria a entidade que está sendo manipulada? 
+R: 
+
+
+Exercício 2: 
+
+A. Como você passou os parâmetros de type para a requisição? Por quê? 
+R: 
+
+
+B. Você consegue pensar em um jeito de garantir que apenas types válidos sejam utilizados? 
+R: 
+
+
+Exercício 3: 
+
+A. Qual é o tipo de envio de parâmetro que costuma ser utilizado por aqui? 
+R: 
+
+
+Exercício 4: 
+
+A. Mude o método do endpoint para PUT. O que mudou? 
+R: 
+
+
+B. Você considera o método PUT apropriado para esta transação? Por quê? 
+R:
