@@ -1,0 +1,1 @@
+Infelizmente tive que ficar off o dia inteiro e não tive tempo para resolver as atividades do dia de hoje
