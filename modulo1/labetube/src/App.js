@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css";
-import { CardVideo } from "./components/CardVideo/CardVideo";
-
+import { CardVideo } from "./components/CardVideo/CardVideo"; 
+import { ListaMenu } from "./components/CardVideo/ListaMenu/ListaMenu";
 
 export default function App() {
   const titulo = "Título do vídeo";
@@ -20,48 +20,24 @@ export default function App() {
         <main>
           <nav className="menu-vertical">
             <ul>
-              <li className={CardVideo}>Início</li>
-              <li className={CardVideo}>Em alta</li>
-              <li className={CardVideo}>Inscrições</li>
-              <hr />
-              <li className={CardVideo}>Originais</li>
-              <li className={CardVideo}>Histórico</li>
+              <ListaMenu menuVertical={"Início"} /> 
+              <ListaMenu menuVertical={"Em alta"} /> 
+              <ListaMenu menuVertical={"Incrições"} /> 
+              <hr/>
+              <ListaMenu menuVertical={"Originais"} /> 
+              <ListaMenu menuVertical={"Histórico"} /> 
             </ul>
           </nav>
 
           <section className="painel-de-videos">
-            <div className={CardVideo} onClick={reproduzVideo}>
-              <img src="https://picsum.photos/400/400?a=1 " alt="" />
-              <h4>{titulo}</h4>
-            </div>
-            <div className={CardVideo} onClick={reproduzVideo}>
-              <img src="https://picsum.photos/400/400?a=2 " alt="" />
-              <h4>{titulo}</h4>
-            </div>
-            <div className={CardVideo} onClick={reproduzVideo}>
-              <img src="https://picsum.photos/400/400?a=3 " alt="" />
-              <h4>{titulo}</h4>
-            </div>
-            <div className={CardVideo} onClick={reproduzVideo}>
-              <img src="https://picsum.photos/400/400?a=4 " alt="" />
-              <h4>{titulo}</h4>
-            </div>
-            <div className={CardVideo} onClick={reproduzVideo}>
-              <img src="https://picsum.photos/400/400?a=5 " alt="" />
-              <h4>{titulo}</h4>
-            </div>
-            <div className={CardVideo} onClick={reproduzVideo}>
-              <img src="https://picsum.photos/400/400?a=6 " alt="" />
-              <h4>{titulo}</h4>
-            </div>
-            <div className={CardVideo} onClick={reproduzVideo}>
-              <img src="https://picsum.photos/400/400?a=7 " alt="" />
-              <h4>{titulo}</h4>
-            </div>
-            <div className={CardVideo} onClick={reproduzVideo}>
-              <img src="https://picsum.photos/400/400?a=8 " alt="" />
-              <h4>{titulo}</h4>
-            </div>
+            <CardVideo titulo={"Video 1"} video={"https://picsum.photos/400/400?a=1 "} onClick={reproduzVideo}/>
+            <CardVideo titulo={"Video 2"} video={"https://picsum.photos/400/400?a=2 "} onClick={reproduzVideo}/>
+            <CardVideo titulo={"Video 3"} video={"https://picsum.photos/400/400?a=3 "} onClick={reproduzVideo}/>
+            <CardVideo titulo={"Video 4"} video={"https://picsum.photos/400/400?a=4 "} onClick={reproduzVideo}/>
+            <CardVideo titulo={"Video 5"} video={"https://picsum.photos/400/400?a=5 "} onClick={reproduzVideo}/>
+            <CardVideo titulo={"Video 6"} video={"https://picsum.photos/400/400?a=6 "} onClick={reproduzVideo}/>
+            <CardVideo titulo={"Video 7"} video={"https://picsum.photos/400/400?a=7 "} onClick={reproduzVideo}/>
+            <CardVideo titulo={"Video 8"} video={"https://picsum.photos/400/400?a=8 "} onClick={reproduzVideo}/>
           </section>
         </main>
 
