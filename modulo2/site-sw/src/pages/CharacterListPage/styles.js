@@ -1,4 +1,5 @@
 import styled from 'styled-components' 
+import { useNavigate } from 'react-router-dom'
 
 export const CharacterListCardContainer = styled.div`
     width: 100px; 
@@ -22,13 +23,15 @@ const Name = styled.p`
     color: white; 
     background-color: #1F2738; 
     padding: 10px; 
+    cursor: pointer;
 `
 
-export const CharacterListCard = ({ name, image }) => {
+export const CharacterListCard = ({ name, image, index }) => {
+    const navigate = useNavigate()
     return (
         <CharacterListCardContainer>    
             {image} 
-            <Name>{name}</Name>
+            <Name onClick={() => navigate(`/details/${index+1}`)}>{name}</Name>
         </CharacterListCardContainer>
     )
 }

@@ -14,7 +14,7 @@ export const CharacterListPage = () => {
     }, [])
     return (
         <CharacterListPageContainer> 
-            {charactersList.map((character, index) => <CharacterListCard key={index} name={character.name} image={'image'} />)}
+            {charactersList.map((character, index) => <CharacterListCard key={index} name={character.name} image={'image'} index={index} />)}
         </CharacterListPageContainer>
     )
 }
