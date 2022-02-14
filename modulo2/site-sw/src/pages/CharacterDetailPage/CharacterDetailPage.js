@@ -1,7 +1,7 @@
-import React from 'react' 
+import { CharacterDetailPageContainer } from './styles'
 import { useParams } from 'react-router-dom' 
 import axios from 'axios' 
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react' 
  
 export const CharacterDetailPage = () => {
     const params = useParams() 
@@ -14,9 +14,9 @@ export const CharacterDetailPage = () => {
         .catch((error) => console.log(error))       
     }, [])
     return ( 
-        <> 
-        <h1>CharacterDetailPage</h1> 
+        <CharacterDetailPageContainer> 
+        <h1>Details:</h1> 
         <p>{details.name}</p> 
-        </>
+        </CharacterDetailPageContainer>
     )
 }
