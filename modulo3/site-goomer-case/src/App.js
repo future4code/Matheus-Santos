@@ -1,8 +1,9 @@
-import { Router } from './router'
+import { Router } from './router'; 
+import './index.css'
 
 function App() {
   return (
-    <Router />
+      <Router />
   );
 }
 

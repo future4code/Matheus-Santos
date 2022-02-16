@@ -1,1 +1,2 @@
-export * from './restaurants-card'
+export * from './restaurant' 
+export * from './search'
