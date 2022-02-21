@@ -4,8 +4,7 @@ export const getRestaurants = async () => {
     let error 
     let response 
     try {
-        const { data } = await axios.get('https://challange.goomer.com.br/restaurants') 
-        console.log(data) 
+        const { data } = await axios.get('https://challange.goomer.com.br/restaurants')  
         response = data
     } catch(e) {
         error = e 
@@ -16,17 +15,17 @@ export const getRestaurants = async () => {
     }
 } 
 
-export const getMenu = async () => {
+export const getMenu = async (id) => {
     let error 
     let response 
     try {
-        const { data } = await axios.get('https://challange.goomer.com.br/restaurants/{id}/menu') 
-        console.log(data) 
-        response = data 
+        const { data } = await axios.get(`https://challange.goomer.com.br/restaurants/${id}/menu`)   
+        response = data
     } catch(e) {
         error = e 
-    } return {
-        error,
-        response
+    } 
+    return {
+        error, 
+        response 
     }
-}
+} 

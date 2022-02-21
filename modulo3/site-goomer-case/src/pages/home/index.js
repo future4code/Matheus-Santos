@@ -30,7 +30,7 @@ export const HomePage = () => {
         <PageTitle>Bem-vindo ao Labenu Rango!</PageTitle> 
         <SearchBox value={searchTerm} onChange={onChangeSearchTerm} />
         <RestaurantCardsContainer>
-        {restaurants.filter(filterRestaurants).map(restaurant => <RestaurantCard key={restaurant.id} name={restaurant.name} address={restaurant.address} />)}    
+        {restaurants.filter(filterRestaurants).map(restaurant => <RestaurantCard key={restaurant.id} name={restaurant.name} address={restaurant.address} image={restaurant.image} id={restaurant.id} />)}    
         </RestaurantCardsContainer> 
         </>
     )
